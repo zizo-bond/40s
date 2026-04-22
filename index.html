@@ -315,11 +315,10 @@
         </div>
     </div>
 
+    <script src="termsData.js"></script>
     <script>
-const originalTerms = [
-    {
-        "id": 1,
-        "term": "كُتّاب",
+// تم تحميل البيانات من termsData.js
+const extractedTerms = [];
         "pronunciation": "كُتّاب",
         "category": "التعليم",
         "social_class": "عامة/ريف",
@@ -21198,9 +21197,8 @@ const extractedTerms = [
     "notes": "من مجلة الرسالة - عدد 366",
     "source": "مجلة الرسالة/العدد 366/الحديث ذو شجون",
     "rarity": "قيد المراجعة"
-  }
 ];
-const terms = [...originalTerms, ...extractedTerms];
+const terms = originalTerms || [];
 </script>
     <script>
 
